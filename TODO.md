@@ -1,6 +1,6 @@
 - [ ] HTML structure and layout
-  - [ ] HTML structure and layout for login screen
-  - [ ] Respond to URL changes by loading login on '/' and a (for now) empty chat screen on '/chat'
+  - [x] HTML structure and layout for login screen
+  - [x] Respond to URL changes by loading login on '/' and a (for now) empty chat screen on '/chat'
   - [ ] HTML structure and layout for chat screen
 - [ ] Implement login
   - [ ] Save the user data in a variable so it can be added to messaged
