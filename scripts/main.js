@@ -1,12 +1,15 @@
 (function(){
   'use strict';
 
+  var username = '';
+
   $(document).ready(function(){
 
     route();
 
     $(document).on('submit', '.login-form', function(event){
       event.preventDefault();
+      username = $(this).find('.login-form-username').val();
       window.location.hash = '/chat';
     });
 
@@ -22,9 +25,14 @@
         $('.application').html(JST['login']());
         break;
       case '#/chat':
-        $('.application').html(JST['chat']());
+        renderChat();
         break;
     }
+  }
+
+  function renderChat() {
+    $('.application').html(JST['chat']());
+    console.log('username:', username);
   }
 
 })();
